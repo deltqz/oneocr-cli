@@ -13,14 +13,13 @@ oneocr image_001.png >text.txt
 - PowerShell
 
 ## Installation:
-- Get the latest build from the releases section.
-- Extract the `OneOCR` folder to any directory.
-- Execute the included `install.bat` file, then delete it if you want.
-- Done!
+1 - Get the latest build from the releases section.<br>
+2 - Extract the `OneOCR` folder to any directory.<br>
+3 - Execute the included `install.bat` file, then delete it if you want. Done!
 
-This last step is neccesary to copy `oneocr.dll`, `oneocr.onemodel` and `onnxruntime.dll` from the Snipping Tool folder. This also adds the `oneocr.exe` file to PATH, so you can run it from any folder via CLI or batching. If you copy them and add the OneOCR folder to PATH manually, you don't have to run the bat at all. PowerShell is only needed by the bat file, `oneocr.exe` doesn't need it to work.
+This last step is neccesary to copy `oneocr.dll`, `oneocr.onemodel` and `onnxruntime.dll` from the Snipping Tool folder. This also adds `oneocr` to PATH, so you can run it from any folder via CLI or batching. If you copy the required files and add the OneOCR folder to PATH manually, you don't have to run the bat at all. PowerShell is only needed by the bat file to perform those two tasks, it's not a OneOCR-CLI dependency.
 
-The reason I can't include the required files in the release it's because of potential licensing issues, since it's privative software that you already have on your PC anyway. For me, the files are in this location, but for you it may be different.
+I can't include the required files in the release because of potential licensing issues, since it's privative software that you already have on your PC anyway. For me, the files are in this location, but it may be different for you.
 ```cmd
 C:\Program Files\WindowsApps\Microsoft.ScreenSketch_11.2510.31.0_x64__8wekyb3d8bbwe\SnippingTool
 ```
