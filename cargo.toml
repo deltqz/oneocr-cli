@@ -1,0 +1,20 @@
+[package]
+name = "oneocr-cli"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0"
+image = "0.24"
+libloading = "0.8"
+
+[[bin]]
+name = "oneocr-cli"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = "z"
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
