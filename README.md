@@ -17,7 +17,7 @@ oneocr image_001.png >text.txt
 - Extract the `OneOCR` folder to any directory.
 - Execute the included `install.bat` file, then delete it if you want.
 
-This last step is neccesary to copy `oneocr.dll`, `oneocr.onemodel` and `onnxruntime.dll` from the Snipping Tool folder. This also adds the oneocr.exe to path, so you can run it from any folder via CLI or batching. If you find them and copy them manually, you don't have to run the bat.
+This last step is neccesary to copy `oneocr.dll`, `oneocr.onemodel` and `onnxruntime.dll` from the Snipping Tool folder. This also adds the oneocr.exe to PATH, so you can run it from any folder via CLI or batching. If you copy them and add the OneOCR folder to PATH manually, you don't have to run the bat.
 
 The reason I can't include the required files in the release it's because of potential licensing issues, since it's privative software that you already have on your PC anyway. For me, the files are in this location, but for you it may be different.
 ```cmd
