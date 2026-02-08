@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
 
-set "RUNDIR=%CD%"
+set "RUNDIR=%~dp0"
 
 :: Get Snipping Tool installation directory
 for /f "usebackq delims=" %%I in (`
@@ -32,6 +32,11 @@ for %%F in (
   )
 )
 
+:: Add OneOCR-CLI to PATH
+echo Adding %RUNDIR% to PATH
+powershell -NoP -C "$p=[Environment]::GetEnvironmentVariable('Path','User');$d='%~dp0'.TrimEnd('\');if($p -notlike '*'+$d+'*'){[Environment]::SetEnvironmentVariable('Path',\"$p;$d\",'User')}"
+
 echo.
-echo Done.
+echo Done!
+pause
 exit /b 0
