@@ -19,7 +19,7 @@ oneocr image_001.png >text.txt
 
 This last step is neccesary to copy `oneocr.dll`, `oneocr.onemodel` and `onnxruntime.dll` from the Snipping Tool folder. This also adds the oneocr.exe to path, so you can run it from any folder via CLI or batching. If you find them and copy them manually, you don't have to run the bat.
 
-The reason I can't incluse the required files in the release it's because of potential licensing issues, since it's privative software that you already have on your PC anyway. For me, the files are in this location, but for you it may be different.
+The reason I can't include the required files in the release it's because of potential licensing issues, since it's privative software that you already have on your PC anyway. For me, the files are in this location, but for you it may be different.
 ```cmd
 C:\Program Files\WindowsApps\Microsoft.ScreenSketch_11.2510.31.0_x64__8wekyb3d8bbwe\SnippingTool
 ```
