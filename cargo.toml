@@ -9,7 +9,7 @@ image = "0.24"
 libloading = "0.8"
 
 [[bin]]
-name = "oneocr-cli"
+name = "oneocr"
 path = "src/main.rs"
 
 [profile.release]
