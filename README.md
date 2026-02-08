@@ -10,6 +10,7 @@ oneocr image_001.png >text.txt
 ## Prerequisites:
 - Windows 11 (x64)
 - [Snipping Tool](https://apps.microsoft.com/detail/9mz95kl8mr0l) (it's normally installed by default)
+- Powershell (only for the installation bat)
 
 ## Installation:
 - Get the latest build from the releases section.
